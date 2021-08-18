@@ -1,2 +1,1 @@
-#Main File
-##Open homepage.html 
+Download all the files and open homepage.html to run the page.
