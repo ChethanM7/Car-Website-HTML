@@ -1,0 +1,275 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+header {
+  padding: 156px 0 100px;
+}
+
+section {
+  padding: 150px 0;
+}
+#id1{
+font-family:cursive;
+color:black;
+font-weight:bold;
+}
+
+</style>
+<script>
+(function($) {
+  "use strict"; // Start of use strict
+
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 56)
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
+  });
+
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+  // Activate scrollspy to add active class to navbar items on scroll
+  $('body').scrollspy({
+    target: '#mainNav',
+    offset: 56
+  });
+
+})(jQuery); // End of use strict
+</script>
+<title>BENZ</title>
+<link rel="icon" href="benz.png" type="image/png">
+</head>
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="homepage.html"><img src="home.png" height="30" width="25"/> BACK HOME</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">PRODUCTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">More</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <img src="benzmain.jpg" height="140" width="200"/><br/><br/>
+	   <h1 id="id1">MERCEDES BENZ</h1>
+      <p class="lead">Cars are the reason we, you know, people live or die</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Mercedes-Benz </h2>
+          <p class="lead">Mercedes-Benz is a German global automobile marque and a division of Daimler AG. Mercedes-Benz is known for luxury vehicles, buses, coaches, ambulances and trucks. The headquarters is in Stuttgart, Baden-Württemberg. The name first appeared in 1926 under Daimler-Benz. In 2018, Mercedes-Benz was the biggest selling premium vehicle brand in the world, having sold 2.31 million passenger cars.</p>
+          <p class="lead">Mercedes-Benz traces its origins to Daimler-Motoren-Gesellschaft's 1901 Mercedes and Karl Benz's 1886 Benz Patent-Motorwagen, which is widely regarded as the first gasoline-powered automobile. The slogan for the brand is "the best or nothing".</p>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="services" class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>BENZ G CLASS</title><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> <image xlink:href="benz_g_class.png"  width="100%" height="225" /></svg>
+            <div class="card-body">
+              <p class="card-text">BENZ G CLASS</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="fun1(this);">GET PRICE</button>
+                  
+                </div>
+                <small class="text-muted" >PETROL</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="120%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>BENZ S CLASS</title><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text><image xlink:href="benz_s_class.jpg"  width="100%" height="230" /></svg>
+            <div class="card-body">
+              <p class="card-text">BENZ S CLASS</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <button type="button" class="btn btn-sm btn-outline-secondary" onclick="fun2(this);">GET PRICE</button>
+                </div>
+                <small class="text-muted">PETROL</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>BENZ A CLASS</title><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text><image xlink:href="benz_a_class.png"  width="100%" height="225" /></svg>
+            <div class="card-body">
+              <p class="card-text">BENZ A CLASS<p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="fun3(this);">GET PRICE</button>
+                </div>
+                <small class="text-muted">DIESEL</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>BENZ CLA</title><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text><image xlink:href="benz_cla.jpg"  width="100%" height="225" /></svg>
+            <div class="card-body">
+              <p class="card-text">BENZ CLA</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="fun4(this);">GET PRICE</button>
+                </div>
+                <small class="text-muted">DIESEL</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>BENZ 300 SLR</title><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text><image xlink:href="benz_300_slr.jpg"  width="100%" height="225" /></svg>
+            <div class="card-body">
+              <p class="card-text">BENZ 300 SLR</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="fun5(this);">GET PRICE</button>
+                </div>
+                <small class="text-muted">DIESEL</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>BENZ AMG GT</title><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text><image xlink:href="benz_amg_gt.jpg"  width="100%" height="225" /></svg>
+            <div class="card-body">
+              <p class="card-text">BENZ AMG GT</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="fun6(this);">GET PRICE</button>
+                </div>
+                <small class="text-muted">PETROL</small>
+              </div>
+            </div>
+          </div>
+        </div>
+	<!--
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text><image xlink:href="back1.jpg"  width="100%" height="225" /></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text><image xlink:href="back1.jpg"  width="100%" height="225" /></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text><image xlink:href="back1.jpg"  width="100%" height="225" /></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+ < <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>For specification Comparison</h2>
+          <p class="lead"><a href="compare.html">CLICK HERE</a></p>
+		 </div>
+      </div>
+    </div>
+  </section>
+  <script>
+  function fun1(e){
+  e.innerHTML="Rs.1,35,00,000";
+  }
+   function fun2(e){
+  e.innerHTML="Rs.2,73,00,000";
+  }
+   function fun3(e){
+  e.innerHTML="Rs.30,94,000";
+  }
+   function fun4(e){
+  e.innerHTML="Rs.36,99,000";
+  }
+   function fun5(e){
+  e.innerHTML="Rs.2,54,00,000";
+  }
+   function fun6(e){
+  e.innerHTML="Rs.2,27,33,626";
+  }
+  
+  </script>
+  </html>
+  
+	
